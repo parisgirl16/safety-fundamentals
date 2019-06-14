@@ -1,0 +1,110 @@
+body {
+  background: #DBE7E3;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DE0000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
+}
+
+.nav {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a:hover {
+  background-color: #DBE7E3;
+  color: #DE0000
+}
+
+.a {
+  display: block;
+  padding: 20px;
+  background-color: #DE0000;
+  color: #DBE7E3
+}
+
+li .a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  background-color: #DBE7E3;
+  color: #DE0000;
+}
+
+li {
+  font-size: 90%
+}
+
+.active {
+  background-color: #DBE7E3;
+  color: #DE0000;
+}
+
+h1  {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 300%
+}
+
+h4 {
+  text-align: center;
+  border: solid #DE0000 1px;
+  padding: 2px;
+  font-size: 150%
+}
+
+h6 {
+  font-size: 125%;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.radio {
+  font-size: 85%
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+.start-quiz {
+  display: block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.quiz {
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.resources {
+  text-align: center;
+  background: none;
+  color: black;
+  text-decoration-color: black
+}
+
+iframe {
+  margin-left: 275px;
+  margin-right: 275px;
+}
