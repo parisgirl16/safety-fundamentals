@@ -1,6 +1,8 @@
 body {
   background: #DBE7E3;
   font-family: 'Noto Sans HK', sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 ul {
@@ -36,21 +38,8 @@ li .a {
   text-decoration: none;
 }
 
-.active {
-  text-decoration: none;
-  display: block;
-  padding: 20px;
-  background-color: #DBE7E3;
-  color: #DE0000;
-}
-
 li {
   font-size: 90%
-}
-
-.active {
-  background-color: #DBE7E3;
-  color: #DE0000;
 }
 
 h1  {
@@ -104,7 +93,13 @@ p {
   text-decoration-color: black
 }
 
-iframe {
+.video {
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 300px;
+}
+
+/* iframe {
   margin-left: 275px;
   margin-right: 275px;
-}
+} */
