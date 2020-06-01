@@ -66,6 +66,7 @@ function appendQuiz(quiz) {
 
 function removeQuiz(quiz) {
   $('.quiz').empty();
+  $('.correctAnswers').empty();
 }
 
 var correct = [
