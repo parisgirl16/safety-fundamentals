@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <meta charset="utf-8">
-    <title>Safety Fundamentals</title>
+    <title>Safety Skills</title>
   </head>
   <body>
     <ul>
@@ -14,9 +14,9 @@
       <li class="nav"><a class="a" href="first-aid.html">First Aid</a></li>
       <!-- <li class="nav"><a class="a" href="babysitting.html">Babysitting</a></li> -->
     </ul>
-    <h1>Safety Fundamentals</h1>
+    <h1>Safety Skills</h1>
     <h4>Mission</h4>
-    <p>Safety Fundamentals was created to teach people some basics of emergency response. Instead of being just a bystander that doesn't
+    <p>Safety Skills was created to teach people some basics of emergency response. Instead of being just a bystander that doesn't
     know what to do, you can help with the knowledge you learn on this website.</p>
     <p class="disclaimer">*Disclaimer: This does NOT replace in-person training and certifications.*</p>
     <h4>Emergency Action Steps</h4>
@@ -38,9 +38,13 @@
     </ol>
     <h4>Pre-Quiz</h4>
     <p>Keep track of your answers on a piece of paper, so you can compare them from before and after you learn more about emergency response.</p>
-    <input type="button" onclick="appendQuiz(quiz)" class="start-quiz" value="Start Quiz!">
+    <section class="buttons">
+      <input type="button" onclick="appendQuiz(quiz)" class="start-quiz" value="Start Quiz">
+      <input type="button" onclick="removeQuiz(quiz)" class="remove-quiz" value="Clear Quiz">
+    </section>
     <article class="quiz">
-
+    </article>
+    <article class="correctAnswers">
     </article>
     <h4>Find Training Courses and Materials:</h4>
     <a href="https://www.redcross.org/take-a-class"><p class="resources">Take a class - American Red Cross</p></a>

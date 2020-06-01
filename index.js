@@ -52,15 +52,20 @@ var quiz = [
 ]
 
 function appendQuiz(quiz) {
-  quiz.forEach(function(question) {
-    $('.quiz').append(`<p>${question.question}</p>`);
-    $('.quiz').append(`<div class="radio"><input type="radio">a) ${question.answer1}</div>`);
-    $('.quiz').append(`<div class="radio"><input type="radio">b) ${question.answer2}</div>`);
-    $('.quiz').append(`<div class="radio"><input type="radio">c) ${question.answer3}</div>`);
-    $('.quiz').append(`<div class="radio"><input type="radio">d) ${question.answer4}</div>`);
-  })
-  $('.quiz').append(`<br>`)
-  $('.quiz').append(`<input type="button" onclick="seeAnswers(correct)" value="See Correct Answers" class="see-correct-answers">`)
+    quiz.forEach(function(question) {
+      $('.quiz').append(`<p>${question.question}</p>`);
+      $('.quiz').append(`<div class="radio"><input type="radio">a) ${question.answer1}</div>`);
+      $('.quiz').append(`<div class="radio"><input type="radio">b) ${question.answer2}</div>`);
+      $('.quiz').append(`<div class="radio"><input type="radio">c) ${question.answer3}</div>`);
+      $('.quiz').append(`<div class="radio"><input type="radio">d) ${question.answer4}</div>`);
+    })
+      $('.quiz').append(`<br>`);
+      $('.quiz').append(`<input type="button" onclick="seeAnswers(correct)" value="See Answers" class="see-answers">`)
+      $('.quiz').append(`<input type="button" onclick="closeAnswers(correct)" value="Close Answers" class="close-answers">`)
+};
+
+function removeQuiz(quiz) {
+  $('.quiz').empty();
 }
 
 var correct = [
@@ -77,6 +82,10 @@ var correct = [
 
 function seeAnswers(correct) {
   correct.forEach(function(answers) {
-    $('.quiz').append(`<div><p>${answers.correctAnswer}</p></div>`)
+    $('.correctAnswers').append(`<div><p>${answers.correctAnswer}</p></div>`)
   })
+}
+
+function closeAnswers(correct) {
+    $('.correctAnswers').empty();
 }
